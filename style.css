@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Neonderthaw&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: #28262c;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  color: #f9f5ff;
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+}
+
+.container {
+  max-width: 480px;
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container button {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0;
+  background-color: #998fc7;
+  color: #f9f5ff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: filter 0.2s;
+}
+
+.container button:hover {
+  filter: brightness(50%);
+}
+
+.pass-container {
+  max-width: 480px;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.pass-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #f9f5ff;
+}
+
+.password {
+  color: #f9f5ff;
+  font-size: 1.2rem;
+  background-color: #998fc750;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.password:hover {
+  filter: brightness(70%);
+  transform: scale(1.1);
+}
+
+.visible {
+    display: none;
+}
+
+.copy {
+  background-color: #998fc750;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.8rem;
+  color: #f9f5ff;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.pass-container:hover .copy {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .pass-container {
+    max-width: 320px;
+  }
+}
